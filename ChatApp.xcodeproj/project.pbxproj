@@ -7,12 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93522FD51D600B2E95B /* ConversationCell.swift */; };
+		7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */; };
+		7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */; };
+		7A13E93D22FD794800B2E95B /* ThreadListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93C22FD794800B2E95B /* ThreadListingView.swift */; };
+		7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */; };
+		7A13E94D22FDA03700B2E95B /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */; };
+		7A13E94E22FDA03700B2E95B /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */; };
+		7A13E94F22FDA03700B2E95B /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */; };
+		7A13E95022FDA03700B2E95B /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */; };
+		7A13E95222FDAD4000B2E95B /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */; };
+		7A13E95422FDADE100B2E95B /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95322FDADE100B2E95B /* NewChatView.swift */; };
+		7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */; };
 		7A1DF03422FC5CC300647F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF03322FC5CC300647F22 /* AppDelegate.swift */; };
-		7A1DF03622FC5CC300647F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF03522FC5CC300647F22 /* ViewController.swift */; };
-		7A1DF03922FC5CC300647F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF03722FC5CC300647F22 /* Main.storyboard */; };
 		7A1DF03B22FC5CC500647F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF03A22FC5CC500647F22 /* Assets.xcassets */; };
-		7A1DF03E22FC5CC500647F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF03C22FC5CC500647F22 /* LaunchScreen.storyboard */; };
 		7A1DF04922FC5CC500647F22 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF04822FC5CC500647F22 /* ChatAppTests.swift */; };
+		7A1DF07822FC5D9300647F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF05422FC5D9200647F22 /* LaunchScreen.storyboard */; };
+		7A1DF07922FC5D9300647F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF05622FC5D9200647F22 /* Main.storyboard */; };
+		7A1DF07A22FC5D9300647F22 /* ThreadListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF05922FC5D9200647F22 /* ThreadListingViewController.swift */; };
+		7A1DF07B22FC5D9300647F22 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF05E22FC5D9200647F22 /* Date.swift */; };
+		7A1DF07C22FC5D9300647F22 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF05F22FC5D9200647F22 /* UIView.swift */; };
+		7A1DF07D22FC5D9300647F22 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06022FC5D9200647F22 /* NSDictionary.swift */; };
+		7A1DF07E22FC5D9300647F22 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06122FC5D9200647F22 /* Data.swift */; };
+		7A1DF07F22FC5D9300647F22 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06222FC5D9200647F22 /* UIBarButtonItem.swift */; };
+		7A1DF08022FC5D9300647F22 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06322FC5D9200647F22 /* UIColor.swift */; };
+		7A1DF08122FC5D9300647F22 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06422FC5D9200647F22 /* NSAttributedString.swift */; };
+		7A1DF08222FC5D9300647F22 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06522FC5D9200647F22 /* Int.swift */; };
+		7A1DF08322FC5D9300647F22 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06622FC5D9200647F22 /* UITableView.swift */; };
+		7A1DF08422FC5D9300647F22 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06722FC5D9200647F22 /* UITextField.swift */; };
+		7A1DF08522FC5D9300647F22 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06822FC5D9200647F22 /* Dictionary.swift */; };
+		7A1DF08622FC5D9300647F22 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06922FC5D9200647F22 /* String.swift */; };
+		7A1DF08722FC5D9300647F22 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06A22FC5D9200647F22 /* UIImage.swift */; };
+		7A1DF08822FC5D9300647F22 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06B22FC5D9200647F22 /* UIViewController.swift */; };
+		7A1DF08922FC5D9300647F22 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06C22FC5D9200647F22 /* UIImageView.swift */; };
+		7A1DF08A22FC5D9300647F22 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06D22FC5D9200647F22 /* Double.swift */; };
+		7A1DF08B22FC5D9300647F22 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06E22FC5D9200647F22 /* NSArray.swift */; };
+		7A1DF08C22FC5D9300647F22 /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF06F22FC5D9200647F22 /* UITapGestureRecognizer.swift */; };
+		7A1DF08D22FC5D9300647F22 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07322FC5D9200647F22 /* Global.swift */; };
+		7A1DF08E22FC5D9300647F22 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07422FC5D9200647F22 /* Utils.swift */; };
+		7A1DF08F22FC5D9300647F22 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07522FC5D9200647F22 /* AppConstants.swift */; };
+		7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07622FC5D9200647F22 /* SizeUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +60,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A13E93522FD51D600B2E95B /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetails.swift; sourceTree = "<group>"; };
+		7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadManager.swift; path = ChatApp/Models/ThreadManager.swift; sourceTree = SOURCE_ROOT; };
+		7A13E93C22FD794800B2E95B /* ThreadListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadListingView.swift; sourceTree = "<group>"; };
+		7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsListingCell.swift; sourceTree = "<group>"; };
+		7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
+		7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		7A13E95322FDADE100B2E95B /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
+		7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatListingCell.swift; sourceTree = "<group>"; };
 		7A1DF03022FC5CC300647F22 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1DF03322FC5CC300647F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A1DF03522FC5CC300647F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A1DF03822FC5CC300647F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A1DF03A22FC5CC500647F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7A1DF03D22FC5CC500647F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1DF03F22FC5CC500647F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A1DF04422FC5CC500647F22 /* ChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1DF04822FC5CC500647F22 /* ChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTests.swift; sourceTree = "<group>"; };
 		7A1DF04A22FC5CC500647F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A1DF05522FC5D9200647F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1DF05722FC5D9200647F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A1DF05922FC5D9200647F22 /* ThreadListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadListingViewController.swift; sourceTree = "<group>"; };
+		7A1DF05E22FC5D9200647F22 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7A1DF05F22FC5D9200647F22 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		7A1DF06022FC5D9200647F22 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
+		7A1DF06122FC5D9200647F22 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		7A1DF06222FC5D9200647F22 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		7A1DF06322FC5D9200647F22 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7A1DF06422FC5D9200647F22 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		7A1DF06522FC5D9200647F22 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		7A1DF06622FC5D9200647F22 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		7A1DF06722FC5D9200647F22 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		7A1DF06822FC5D9200647F22 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		7A1DF06922FC5D9200647F22 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7A1DF06A22FC5D9200647F22 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		7A1DF06B22FC5D9200647F22 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		7A1DF06C22FC5D9200647F22 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		7A1DF06D22FC5D9200647F22 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		7A1DF06E22FC5D9200647F22 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
+		7A1DF06F22FC5D9200647F22 /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
+		7A1DF07322FC5D9200647F22 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		7A1DF07422FC5D9200647F22 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7A1DF07522FC5D9200647F22 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		7A1DF07622FC5D9200647F22 /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +124,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A13E93922FD59FA00B2E95B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7A1DF02722FC5CC300647F22 = {
 			isa = PBXGroup;
 			children = (
+				7A13E93922FD59FA00B2E95B /* Managers */,
+				7A1DF05822FC5D9200647F22 /* Controllers */,
+				7A1DF05D22FC5D9200647F22 /* Extensions */,
+				7A1DF07722FC5D9200647F22 /* Libraries */,
+				7A1DF05A22FC5D9200647F22 /* Models */,
+				7A1DF05B22FC5D9200647F22 /* Resources */,
+				7A1DF05322FC5D9200647F22 /* Storyboards */,
+				7A1DF07222FC5D9200647F22 /* Utils */,
+				7A1DF07022FC5D9200647F22 /* Views */,
 				7A1DF03222FC5CC300647F22 /* ChatApp */,
 				7A1DF04722FC5CC500647F22 /* ChatAppTests */,
 				7A1DF03122FC5CC300647F22 /* Products */,
@@ -78,10 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				7A1DF03322FC5CC300647F22 /* AppDelegate.swift */,
-				7A1DF03522FC5CC300647F22 /* ViewController.swift */,
-				7A1DF03722FC5CC300647F22 /* Main.storyboard */,
 				7A1DF03A22FC5CC500647F22 /* Assets.xcassets */,
-				7A1DF03C22FC5CC500647F22 /* LaunchScreen.storyboard */,
 				7A1DF03F22FC5CC500647F22 /* Info.plist */,
 			);
 			path = ChatApp;
@@ -94,6 +176,122 @@
 				7A1DF04A22FC5CC500647F22 /* Info.plist */,
 			);
 			path = ChatAppTests;
+			sourceTree = "<group>";
+		};
+		7A1DF05322FC5D9200647F22 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF05422FC5D9200647F22 /* LaunchScreen.storyboard */,
+				7A1DF05622FC5D9200647F22 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = ChatApp/Storyboards;
+			sourceTree = "<group>";
+		};
+		7A1DF05822FC5D9200647F22 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF05922FC5D9200647F22 /* ThreadListingViewController.swift */,
+				7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */,
+			);
+			name = Controllers;
+			path = ChatApp/Controllers;
+			sourceTree = "<group>";
+		};
+		7A1DF05A22FC5D9200647F22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */,
+			);
+			name = Models;
+			path = ChatApp/Models;
+			sourceTree = "<group>";
+		};
+		7A1DF05B22FC5D9200647F22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF05C22FC5D9200647F22 /* Fonts */,
+			);
+			name = Resources;
+			path = ChatApp/Resources;
+			sourceTree = "<group>";
+		};
+		7A1DF05C22FC5D9200647F22 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */,
+				7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */,
+				7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */,
+				7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7A1DF05D22FC5D9200647F22 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF05E22FC5D9200647F22 /* Date.swift */,
+				7A1DF05F22FC5D9200647F22 /* UIView.swift */,
+				7A1DF06022FC5D9200647F22 /* NSDictionary.swift */,
+				7A1DF06122FC5D9200647F22 /* Data.swift */,
+				7A1DF06222FC5D9200647F22 /* UIBarButtonItem.swift */,
+				7A1DF06322FC5D9200647F22 /* UIColor.swift */,
+				7A1DF06422FC5D9200647F22 /* NSAttributedString.swift */,
+				7A1DF06522FC5D9200647F22 /* Int.swift */,
+				7A1DF06622FC5D9200647F22 /* UITableView.swift */,
+				7A1DF06722FC5D9200647F22 /* UITextField.swift */,
+				7A1DF06822FC5D9200647F22 /* Dictionary.swift */,
+				7A1DF06922FC5D9200647F22 /* String.swift */,
+				7A1DF06A22FC5D9200647F22 /* UIImage.swift */,
+				7A1DF06B22FC5D9200647F22 /* UIViewController.swift */,
+				7A1DF06C22FC5D9200647F22 /* UIImageView.swift */,
+				7A1DF06D22FC5D9200647F22 /* Double.swift */,
+				7A1DF06E22FC5D9200647F22 /* NSArray.swift */,
+				7A1DF06F22FC5D9200647F22 /* UITapGestureRecognizer.swift */,
+			);
+			name = Extensions;
+			path = ChatApp/Extensions;
+			sourceTree = "<group>";
+		};
+		7A1DF07022FC5D9200647F22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF07122FC5D9200647F22 /* Cells */,
+				7A13E93C22FD794800B2E95B /* ThreadListingView.swift */,
+				7A13E95322FDADE100B2E95B /* NewChatView.swift */,
+			);
+			name = Views;
+			path = ChatApp/Views;
+			sourceTree = "<group>";
+		};
+		7A1DF07122FC5D9200647F22 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A13E93522FD51D600B2E95B /* ConversationCell.swift */,
+				7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */,
+				7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7A1DF07222FC5D9200647F22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A1DF07322FC5D9200647F22 /* Global.swift */,
+				7A1DF07422FC5D9200647F22 /* Utils.swift */,
+				7A1DF07522FC5D9200647F22 /* AppConstants.swift */,
+				7A1DF07622FC5D9200647F22 /* SizeUtils.swift */,
+			);
+			name = Utils;
+			path = ChatApp/Utils;
+			sourceTree = "<group>";
+		};
+		7A1DF07722FC5D9200647F22 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			path = ChatApp/Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +375,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1DF03E22FC5CC500647F22 /* LaunchScreen.storyboard in Resources */,
+				7A1DF07922FC5D9300647F22 /* Main.storyboard in Resources */,
+				7A1DF07822FC5D9300647F22 /* LaunchScreen.storyboard in Resources */,
+				7A13E94E22FDA03700B2E95B /* Karla-Regular.ttf in Resources */,
+				7A13E95022FDA03700B2E95B /* Karla-BoldItalic.ttf in Resources */,
+				7A13E94F22FDA03700B2E95B /* Karla-Bold.ttf in Resources */,
+				7A13E94D22FDA03700B2E95B /* Karla-Italic.ttf in Resources */,
 				7A1DF03B22FC5CC500647F22 /* Assets.xcassets in Resources */,
-				7A1DF03922FC5CC300647F22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +399,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1DF03622FC5CC300647F22 /* ViewController.swift in Sources */,
+				7A1DF08B22FC5D9300647F22 /* NSArray.swift in Sources */,
+				7A1DF07E22FC5D9300647F22 /* Data.swift in Sources */,
+				7A1DF07C22FC5D9300647F22 /* UIView.swift in Sources */,
+				7A1DF07A22FC5D9300647F22 /* ThreadListingViewController.swift in Sources */,
+				7A1DF07D22FC5D9300647F22 /* NSDictionary.swift in Sources */,
+				7A13E95422FDADE100B2E95B /* NewChatView.swift in Sources */,
+				7A1DF08022FC5D9300647F22 /* UIColor.swift in Sources */,
+				7A1DF08D22FC5D9300647F22 /* Global.swift in Sources */,
+				7A1DF08422FC5D9300647F22 /* UITextField.swift in Sources */,
+				7A1DF08322FC5D9300647F22 /* UITableView.swift in Sources */,
+				7A1DF08822FC5D9300647F22 /* UIViewController.swift in Sources */,
+				7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */,
+				7A1DF08A22FC5D9300647F22 /* Double.swift in Sources */,
 				7A1DF03422FC5CC300647F22 /* AppDelegate.swift in Sources */,
+				7A1DF08C22FC5D9300647F22 /* UITapGestureRecognizer.swift in Sources */,
+				7A1DF08922FC5D9300647F22 /* UIImageView.swift in Sources */,
+				7A13E93D22FD794800B2E95B /* ThreadListingView.swift in Sources */,
+				7A1DF08E22FC5D9300647F22 /* Utils.swift in Sources */,
+				7A1DF08722FC5D9300647F22 /* UIImage.swift in Sources */,
+				7A1DF08222FC5D9300647F22 /* Int.swift in Sources */,
+				7A13E95222FDAD4000B2E95B /* NewChatViewController.swift in Sources */,
+				7A1DF08122FC5D9300647F22 /* NSAttributedString.swift in Sources */,
+				7A1DF08F22FC5D9300647F22 /* AppConstants.swift in Sources */,
+				7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */,
+				7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */,
+				7A1DF08522FC5D9300647F22 /* Dictionary.swift in Sources */,
+				7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */,
+				7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */,
+				7A1DF08622FC5D9300647F22 /* String.swift in Sources */,
+				7A1DF07F22FC5D9300647F22 /* UIBarButtonItem.swift in Sources */,
+				7A1DF07B22FC5D9300647F22 /* Date.swift in Sources */,
+				7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,20 +453,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7A1DF03722FC5CC300647F22 /* Main.storyboard */ = {
+		7A1DF05422FC5D9200647F22 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7A1DF03822FC5CC300647F22 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7A1DF03C22FC5CC500647F22 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A1DF03D22FC5CC500647F22 /* Base */,
+				7A1DF05522FC5D9200647F22 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7A1DF05622FC5D9200647F22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1DF05722FC5D9200647F22 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
