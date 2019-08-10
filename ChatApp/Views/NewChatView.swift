@@ -13,4 +13,9 @@ class NewChatView: UIView {
     @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var newChatTableView: UITableView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        newChatTableView.tableFooterView = UIView()
+    }
 }

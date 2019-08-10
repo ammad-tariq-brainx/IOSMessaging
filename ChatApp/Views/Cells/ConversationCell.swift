@@ -35,6 +35,7 @@ class ConversationCell: UITableViewCell {
         threadName.text = data.name
         threadMessage.text = data.message.last
         threadTime.text = data.time.last
+        threadNotification.backgroundColor = UIColor(patternImage: UIImage(named: "BackgroundGradient")!)
         threadNotification.text = String(data.notification)
         if data.notification > 0 {
             threadNotification.isHidden = false

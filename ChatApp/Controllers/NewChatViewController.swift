@@ -18,7 +18,7 @@ class NewChatViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "New Chat"
-        threadsArray = ThreadManager.shared.loadData()
+        threadsArray = ThreadManager.shared.loadAllData()
     }
 
     @IBAction func closeNewChat(_ sender: UIBarButtonItem) {
