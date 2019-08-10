@@ -17,12 +17,19 @@ class NewChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "New Chat"
+        self.navigationItem.title = "New Chat"
+        let button1 = UIBarButtonItem(image: UIImage(named: "Close"), style: .plain, target: self, action: #selector(action))
+        button1.tintColor = .lightGray
+        self.navigationItem.leftBarButtonItem = button1
         threadsArray = ThreadManager.shared.loadAllData()
     }
+    
+    @objc func action () {
+        self.dismiss(animated: true, completion: nil)
+    }
 
-    @IBAction func closeNewChat(_ sender: UIBarButtonItem) {
-        
+    @IBAction
+    func closeNewChat(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     

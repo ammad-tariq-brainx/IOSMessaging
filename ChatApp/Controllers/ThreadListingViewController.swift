@@ -15,10 +15,36 @@ class ThreadListingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         threadsArray = ThreadManager.shared.loadThreads()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
+         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    @IBAction
+    func openContactList(_ sender: UIButton) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "newChatViewController") as! NewChatViewController
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.navigationController?.present(navigationController, animated: true, completion: nil)
+    }
+    
+    @IBAction func openMessagingController(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "messagingViewController") as! MessagingViewController
+        self.navigationController?.show(viewController, sender: self)
+    }
+    
+    
 }
 
 extension ThreadListingViewController: UITableViewDataSource {

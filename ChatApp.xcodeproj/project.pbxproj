@@ -12,10 +12,6 @@
 		7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */; };
 		7A13E93D22FD794800B2E95B /* ThreadListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93C22FD794800B2E95B /* ThreadListingView.swift */; };
 		7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */; };
-		7A13E94D22FDA03700B2E95B /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */; };
-		7A13E94E22FDA03700B2E95B /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */; };
-		7A13E94F22FDA03700B2E95B /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */; };
-		7A13E95022FDA03700B2E95B /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */; };
 		7A13E95222FDAD4000B2E95B /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */; };
 		7A13E95422FDADE100B2E95B /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95322FDADE100B2E95B /* NewChatView.swift */; };
 		7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */; };
@@ -47,6 +43,12 @@
 		7A1DF08E22FC5D9300647F22 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07422FC5D9200647F22 /* Utils.swift */; };
 		7A1DF08F22FC5D9300647F22 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07522FC5D9200647F22 /* AppConstants.swift */; };
 		7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07622FC5D9200647F22 /* SizeUtils.swift */; };
+		7A327B3522FEAA2E0064E4BD /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A327B3422FEAA2E0064E4BD /* MessagingViewController.swift */; };
+		7A327B3722FEAA570064E4BD /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A327B3622FEAA570064E4BD /* MessagingView.swift */; };
+		7A327B4422FEF39F0064E4BD /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */; };
+		7A327B4522FEF39F0064E4BD /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */; };
+		7A327B4622FEF39F0064E4BD /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */; };
+		7A327B4722FEF39F0064E4BD /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +67,6 @@
 		7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadManager.swift; path = ChatApp/Models/ThreadManager.swift; sourceTree = SOURCE_ROOT; };
 		7A13E93C22FD794800B2E95B /* ThreadListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadListingView.swift; sourceTree = "<group>"; };
 		7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsListingCell.swift; sourceTree = "<group>"; };
-		7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
-		7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
-		7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
-		7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
 		7A13E95322FDADE100B2E95B /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
 		7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatListingCell.swift; sourceTree = "<group>"; };
@@ -104,6 +102,12 @@
 		7A1DF07422FC5D9200647F22 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		7A1DF07522FC5D9200647F22 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7A1DF07622FC5D9200647F22 /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
+		7A327B3422FEAA2E0064E4BD /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		7A327B3622FEAA570064E4BD /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
+		7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
+		7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
+		7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,7 @@
 			children = (
 				7A1DF05922FC5D9200647F22 /* ThreadListingViewController.swift */,
 				7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */,
+				7A327B3422FEAA2E0064E4BD /* MessagingViewController.swift */,
 			);
 			name = Controllers;
 			path = ChatApp/Controllers;
@@ -210,21 +215,13 @@
 		7A1DF05B22FC5D9200647F22 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7A1DF05C22FC5D9200647F22 /* Fonts */,
+				7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */,
+				7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */,
+				7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */,
+				7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */,
 			);
 			name = Resources;
 			path = ChatApp/Resources;
-			sourceTree = "<group>";
-		};
-		7A1DF05C22FC5D9200647F22 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				7A13E94B22FDA03600B2E95B /* Karla-Bold.ttf */,
-				7A13E94C22FDA03700B2E95B /* Karla-BoldItalic.ttf */,
-				7A13E94922FDA03600B2E95B /* Karla-Italic.ttf */,
-				7A13E94A22FDA03600B2E95B /* Karla-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		7A1DF05D22FC5D9200647F22 /* Extensions */ = {
@@ -259,6 +256,7 @@
 				7A1DF07122FC5D9200647F22 /* Cells */,
 				7A13E93C22FD794800B2E95B /* ThreadListingView.swift */,
 				7A13E95322FDADE100B2E95B /* NewChatView.swift */,
+				7A327B3622FEAA570064E4BD /* MessagingView.swift */,
 			);
 			name = Views;
 			path = ChatApp/Views;
@@ -377,11 +375,11 @@
 			files = (
 				7A1DF07922FC5D9300647F22 /* Main.storyboard in Resources */,
 				7A1DF07822FC5D9300647F22 /* LaunchScreen.storyboard in Resources */,
-				7A13E94E22FDA03700B2E95B /* Karla-Regular.ttf in Resources */,
-				7A13E95022FDA03700B2E95B /* Karla-BoldItalic.ttf in Resources */,
-				7A13E94F22FDA03700B2E95B /* Karla-Bold.ttf in Resources */,
-				7A13E94D22FDA03700B2E95B /* Karla-Italic.ttf in Resources */,
+				7A327B4522FEF39F0064E4BD /* Karla-Italic.ttf in Resources */,
+				7A327B4722FEF39F0064E4BD /* Karla-BoldItalic.ttf in Resources */,
 				7A1DF03B22FC5CC500647F22 /* Assets.xcassets in Resources */,
+				7A327B4422FEF39F0064E4BD /* Karla-Bold.ttf in Resources */,
+				7A327B4622FEF39F0064E4BD /* Karla-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +410,7 @@
 				7A1DF08822FC5D9300647F22 /* UIViewController.swift in Sources */,
 				7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */,
 				7A1DF08A22FC5D9300647F22 /* Double.swift in Sources */,
+				7A327B3722FEAA570064E4BD /* MessagingView.swift in Sources */,
 				7A1DF03422FC5CC300647F22 /* AppDelegate.swift in Sources */,
 				7A1DF08C22FC5D9300647F22 /* UITapGestureRecognizer.swift in Sources */,
 				7A1DF08922FC5D9300647F22 /* UIImageView.swift in Sources */,
@@ -425,6 +424,7 @@
 				7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */,
 				7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */,
 				7A1DF08522FC5D9300647F22 /* Dictionary.swift in Sources */,
+				7A327B3522FEAA2E0064E4BD /* MessagingViewController.swift in Sources */,
 				7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */,
 				7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */,
 				7A1DF08622FC5D9300647F22 /* String.swift in Sources */,
