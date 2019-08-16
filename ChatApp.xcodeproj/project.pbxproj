@@ -49,6 +49,12 @@
 		7A327B4522FEF39F0064E4BD /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */; };
 		7A327B4622FEF39F0064E4BD /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */; };
 		7A327B4722FEF39F0064E4BD /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */; };
+		7A36EA4D230681CF0003CB70 /* SenderTextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */; };
+		7A36EA4F230681E70003CB70 /* SenderImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */; };
+		7A36EA512306C2420003CB70 /* ReceiverTextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */; };
+		7A36EA532306CF070003CB70 /* ReceiverImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA522306CF070003CB70 /* ReceiverImageMessageCell.swift */; };
+		7A36EA552306D2F00003CB70 /* MessageDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA542306D2F00003CB70 /* MessageDateCell.swift */; };
+		7A36EA572306FBEE0003CB70 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA562306FBEE0003CB70 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +114,12 @@
 		7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
 		7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
 		7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTextMessageCell.swift; sourceTree = "<group>"; };
+		7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderImageMessageCell.swift; sourceTree = "<group>"; };
+		7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTextMessageCell.swift; sourceTree = "<group>"; };
+		7A36EA522306CF070003CB70 /* ReceiverImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverImageMessageCell.swift; sourceTree = "<group>"; };
+		7A36EA542306D2F00003CB70 /* MessageDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDateCell.swift; sourceTree = "<group>"; };
+		7A36EA562306FBEE0003CB70 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */,
+				7A36EA562306FBEE0003CB70 /* Message.swift */,
 			);
 			name = Models;
 			path = ChatApp/Models;
@@ -268,6 +281,11 @@
 				7A13E93522FD51D600B2E95B /* ConversationCell.swift */,
 				7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */,
 				7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */,
+				7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */,
+				7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */,
+				7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */,
+				7A36EA522306CF070003CB70 /* ReceiverImageMessageCell.swift */,
+				7A36EA542306D2F00003CB70 /* MessageDateCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -409,9 +427,11 @@
 				7A1DF08322FC5D9300647F22 /* UITableView.swift in Sources */,
 				7A1DF08822FC5D9300647F22 /* UIViewController.swift in Sources */,
 				7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */,
+				7A36EA512306C2420003CB70 /* ReceiverTextMessageCell.swift in Sources */,
 				7A1DF08A22FC5D9300647F22 /* Double.swift in Sources */,
 				7A327B3722FEAA570064E4BD /* MessagingView.swift in Sources */,
 				7A1DF03422FC5CC300647F22 /* AppDelegate.swift in Sources */,
+				7A36EA4D230681CF0003CB70 /* SenderTextMessageCell.swift in Sources */,
 				7A1DF08C22FC5D9300647F22 /* UITapGestureRecognizer.swift in Sources */,
 				7A1DF08922FC5D9300647F22 /* UIImageView.swift in Sources */,
 				7A13E93D22FD794800B2E95B /* ThreadListingView.swift in Sources */,
@@ -420,7 +440,9 @@
 				7A1DF08222FC5D9300647F22 /* Int.swift in Sources */,
 				7A13E95222FDAD4000B2E95B /* NewChatViewController.swift in Sources */,
 				7A1DF08122FC5D9300647F22 /* NSAttributedString.swift in Sources */,
+				7A36EA552306D2F00003CB70 /* MessageDateCell.swift in Sources */,
 				7A1DF08F22FC5D9300647F22 /* AppConstants.swift in Sources */,
+				7A36EA532306CF070003CB70 /* ReceiverImageMessageCell.swift in Sources */,
 				7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */,
 				7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */,
 				7A1DF08522FC5D9300647F22 /* Dictionary.swift in Sources */,
@@ -428,7 +450,9 @@
 				7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */,
 				7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */,
 				7A1DF08622FC5D9300647F22 /* String.swift in Sources */,
+				7A36EA4F230681E70003CB70 /* SenderImageMessageCell.swift in Sources */,
 				7A1DF07F22FC5D9300647F22 /* UIBarButtonItem.swift in Sources */,
+				7A36EA572306FBEE0003CB70 /* Message.swift in Sources */,
 				7A1DF07B22FC5D9300647F22 /* Date.swift in Sources */,
 				7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */,
 			);

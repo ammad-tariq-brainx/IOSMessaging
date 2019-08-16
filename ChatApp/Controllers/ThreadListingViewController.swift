@@ -41,6 +41,7 @@ class ThreadListingViewController: UIViewController {
     @IBAction func openMessagingController(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyBoard.instantiateViewController(withIdentifier: "messagingViewController") as! MessagingViewController
+        viewController.threadDetails = threadsArray[sender.tag]
         self.navigationController?.show(viewController, sender: self)
     }
     
@@ -48,6 +49,7 @@ class ThreadListingViewController: UIViewController {
 }
 
 extension ThreadListingViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return threadsArray.count + 1
     }
@@ -72,6 +74,7 @@ extension ThreadListingViewController: UITableViewDataSource {
             guard let cell = reusableCell as? ConversationCell else {
                 fatalError("Cannot render a cell")
             }
+            cell.openMessageButton.tag = indexPath.row - 1
             cell.setData(data: threadsArray[indexPath.row - 1])
             tableView.rowHeight = 60
             return cell

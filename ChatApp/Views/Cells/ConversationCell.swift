@@ -15,6 +15,7 @@ class ConversationCell: UITableViewCell {
     @IBOutlet weak var threadMessage: UILabel!
     @IBOutlet weak var threadTime: UILabel!
     @IBOutlet weak var threadNotification: UILabel!
+    @IBOutlet weak var openMessageButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

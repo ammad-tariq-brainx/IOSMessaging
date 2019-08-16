@@ -17,11 +17,12 @@ class NewChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.barTintColor = .white
         self.navigationItem.title = "New Chat"
         let button1 = UIBarButtonItem(image: UIImage(named: "Close"), style: .plain, target: self, action: #selector(action))
         button1.tintColor = .lightGray
         self.navigationItem.leftBarButtonItem = button1
-        threadsArray = ThreadManager.shared.loadAllData()
+        threadsArray = ThreadManager.shared.loadAllContacts()
     }
     
     @objc func action () {

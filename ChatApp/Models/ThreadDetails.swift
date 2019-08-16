@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ThreadDetails {
+    
     var image: UIImage?
     var name: String
     var message = [String]()

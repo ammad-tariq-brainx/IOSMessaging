@@ -52,7 +52,7 @@ extension String {
                 if $0.count <= 1 {
                     return $0.uppercased()
                 } else {
-                    if $0.index(of: "-") != nil {
+                    if $0.firstIndex(of: "-") != nil {
                         return $0.components(separatedBy: "-").map { $0.pascalCase }.joined(separator: "-")
                     } else {
                         return $0.capitalized
