@@ -9,11 +9,14 @@
 import UIKit
 
 class NewChatViewController: UIViewController {
-
-    var threadsArray = [ThreadDetails]()
+    
+    //MARK: Private Variables
+    private var threadsArray = [ThreadDetails]()
+    
+    //MARK: Outlets
     @IBOutlet var newChatView: NewChatView!
     
-    
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,17 +28,19 @@ class NewChatViewController: UIViewController {
         threadsArray = ThreadManager.shared.loadAllContacts()
     }
     
-    @objc func action () {
+    //MARK: Action Methods
+    @objc
+    func action () {
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     @IBAction
     func closeNewChat(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-    
 }
 
+//Extension: - UITableViewDataSource Methods
 extension NewChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return threadsArray.count
@@ -43,17 +48,15 @@ extension NewChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-            let reusableCell = tableView.dequeueReusableCell(
-                withIdentifier: "NewChat",
-                for: indexPath)
-            
-            guard let cell = reusableCell as? NewChatListingCell else {
-                fatalError("Cannot render a cell")
-            }
-            cell.setData(image: threadsArray[indexPath.row].image, text: threadsArray[indexPath.row].name)
-            return cell
-       
+        let reusableCell = tableView.dequeueReusableCell(
+            withIdentifier: "NewChat",
+            for: indexPath)
+        
+        guard let cell = reusableCell as? NewChatListingCell else {
+           Utils.showOkAlert(title: AppConstants.Title.error, message: AppConstants.Message.cannotRenderCell, viewController: self)
+            return UITableViewCell()
+        }
+        cell.setData(image: threadsArray[indexPath.row].image, text: threadsArray[indexPath.row].name)
+        return cell
     }
-    
-    
 }

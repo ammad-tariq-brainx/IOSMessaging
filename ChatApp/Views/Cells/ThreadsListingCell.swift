@@ -9,21 +9,12 @@
 import UIKit
 
 class ThreadsListingCell: UITableViewCell {
-
+    
+    //MARK: Outlets
     @IBOutlet weak var threadsImageView: UIImageView!
     @IBOutlet weak var threadsTextView: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    //MARK: Public Methods
     func setData(imageString: String, text: String) {
         threadsImageView.image = UIImage(imageLiteralResourceName: imageString)
         threadsTextView.text = text

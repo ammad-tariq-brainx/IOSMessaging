@@ -17,71 +17,88 @@ class ThreadManager {
     private init() {
     }
     
+    //MARK: Methods
     func loadAllContacts() -> [ThreadDetails] {
-        var threads = [ThreadDetails]()
         
-        var singleThread = ThreadDetails(image: "MariaJane", name: "Maria Jane")
+        var threads = [ThreadDetails]()
+        var singleThread = ThreadDetails(image: AppConstants.ImageString.mariaJane,
+                                         name: AppConstants.Name.mariaJane)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "DenKlenkov", name: "Den Klenkov")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
+                                     name: AppConstants.Name.denKlenkov)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "JummonSadik", name: "Jummon Sadik")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
+                                     name: AppConstants.Name.jummonSadik)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "TamannaSadh", name: "Tamanna Sadh")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
+                                     name: AppConstants.Name.tamannaSadh)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "ShakiraJethi", name: "Shakira Jethi")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.shakiraJethi,
+                                     name: AppConstants.Name.shakiraJethi)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "zhenyaRynzhuk", name: "Zhenya Rynzhuk")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.zhenyaRynzhuk,
+                                     name: AppConstants.Name.zhenyaRynzhuk)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "TamannaSadh", name: "Tamanna Sadh")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
+                                     name: AppConstants.Name.tamannaSadh)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "DenKlenkov", name: "Den Klenkov")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
+                                     name: AppConstants.Name.denKlenkov)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "JummonSadik", name: "Jummon Sadik")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
+                                     name: AppConstants.Name.jummonSadik)
         threads.append(singleThread)
-        singleThread = ThreadDetails(image: "DenKlenkov", name: "Den Klenkov")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
+                                     name: AppConstants.Name.denKlenkov)
         threads.append(singleThread)
         return threads
     }
     
     func loadThreads() -> [ThreadDetails] {
+        
         var threads = [ThreadDetails]()
-
-        var singleThread = ThreadDetails(image: "MariaJane", name: "Maria Jane")
-        singleThread.setMessage(message: "I like to work with you")
-        singleThread.setMessage(message: "I like to work with you")
-        singleThread.setMessage(message: "Many have unsuccessfully launched a business venture that is internet base but only a handful")
-        singleThread.setMessage(message: "I like to work with you")
-        singleThread.setMessage(message: "Many have unsuccessfully launched a business venture that is internet base but only a handful")
+        var singleThread = ThreadDetails(image: AppConstants.ImageString.mariaJane,
+                                         name: AppConstants.Name.mariaJane)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
         singleThread.updateNotification()
         threads.append(singleThread)
         
-        singleThread = ThreadDetails(image: "TamannaSadh", name: "Tamanna Sadh")
-        singleThread.setMessage(message: "I like to work with you")
-        singleThread.setMessage(message: "Many have unsuccessfully launched a business venture that is internet base but only a handful")
-        singleThread.setMessage(message: "I like to work with you")
-        singleThread.setMessage(message: "Many have unsuccessfully launched a business venture that is internet base but only a handful")
-        singleThread.setMessage(message: "I like to work with you")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
+                                     name: AppConstants.Name.tamannaSadh)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
+        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         threads.append(singleThread)
         
-        singleThread = ThreadDetails(image: "ShakiraJethi", name: "Shakira Jethi")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.shakiraJethi,
+                                     name: AppConstants.Name.shakiraJethi)
         for _ in 0..<5 {
             singleThread.setMessage(message: "I like to work with you")
         }
         threads.append(singleThread)
         
-        singleThread = ThreadDetails(image: "zhenyaRynzhuk", name: "Zhenya Rynzhuk")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.zhenyaRynzhuk,
+                                     name: AppConstants.Name.zhenyaRynzhuk)
         for _ in 0..<5 {
             singleThread.setMessage(message: "Do you want to work with me? Surely we can make up things together")
         }
         threads.append(singleThread)
         
-        singleThread = ThreadDetails(image: "DenKlenkov", name: "Den Klenkov")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
+                                     name: AppConstants.Name.denKlenkov)
         for _ in 0..<5 {
             singleThread.setMessage(message: "How you do that?")
         }
         threads.append(singleThread)
         
-        singleThread = ThreadDetails(image: "JummonSadik", name: "Jummon Sadik")
+        singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
+                                     name: AppConstants.Name.jummonSadik)
         for _ in 0..<5 {
             singleThread.setMessage(message: "New Chat")
         }

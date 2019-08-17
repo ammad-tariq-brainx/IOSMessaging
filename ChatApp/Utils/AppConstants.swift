@@ -12,10 +12,15 @@ class AppConstants {
     
     struct Title {
         static let title = "Title"
+        static let error = "Error"
     }
     
     struct Message {
         static let message = "Message"
+        static let cannotRenderCell = "Cannot Render a Cell"
+        static let iLikeToWorkWithYou = "I like to work with you"
+        static let manyHaveUnsuccessfullyLaunched = "Many have unsuccessfully launched a business venture that is internet base but only a handful"
+        
     }
     
     struct StoryboardId {
@@ -34,5 +39,23 @@ class AppConstants {
     
     struct Segue {
         static let toMainController = "mainController"
+    }
+    
+    struct Name {
+        static let mariaJane = "Maria Jane"
+        static let denKlenkov = "Den Klenkov"
+        static let jummonSadik = "Jummon Sadik"
+        static let tamannaSadh = "Tamanna Sadh"
+        static let shakiraJethi = "Shakira Jethi"
+        static let zhenyaRynzhuk = "Zhenya Rynzhuk"
+    }
+    
+    struct ImageString {
+        static let mariaJane = "MariaJane"
+        static let denKlenkov = "DenKlenkov"
+        static let jummonSadik = "JummonSadik"
+        static let tamannaSadh = "TamannaSadh"
+        static let shakiraJethi = "ShakiraJethi"
+        static let zhenyaRynzhuk = "zhenyaRynzhuk"
     }
 }

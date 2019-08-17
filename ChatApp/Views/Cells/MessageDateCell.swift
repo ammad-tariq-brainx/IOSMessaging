@@ -9,28 +9,25 @@
 import UIKit
 
 class MessageDateCell: UITableViewCell {
-
     
+    //MARK: Outlets
     @IBOutlet weak var timeView: UILabel!
     @IBOutlet weak var dateView: UILabel!
     @IBOutlet weak var leftLineView: UIView!
     @IBOutlet weak var rightLineView: UIView!
     
+    //MARK: Override Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         
         setupLine(view: leftLineView)
         setupLine(view: rightLineView)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-    }
     
+    //MARK: Private Methods
     private func setupLine(view: UIView) {
         view.layer.borderWidth = 1.0
         view.setBorderColor(color: UIColor(red: 0.64, green: 0.71, blue: 0.76, alpha: 0.5))
     }
-
+    
 }

@@ -9,17 +9,19 @@
 import UIKit
 
 class ThreadListingView: UIView {
-
+    
+    //MARK: Outlets
     @IBOutlet weak var titleViewLabel: UILabel!
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var threadListingTableView: UITableView!
-    var gradientLayer: CAGradientLayer!
     
+    //MARK: Override Methods
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         titleViewLabel.text = "Chat"
         threadListingTableView.tableFooterView = UIView()
     }
-
+    
 }

@@ -9,21 +9,12 @@
 import UIKit
 
 class NewChatListingCell: UITableViewCell {
-
     
+    //MARK: Outlets
     @IBOutlet weak var newChatImageView: UIImageView!
     @IBOutlet weak var newChatNameLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-
+    //MARK: Public Methods
     func setData(image: UIImage?, text: String) {
         if let chatImage = image {
             newChatImageView.image = chatImage

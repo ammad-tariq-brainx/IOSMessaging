@@ -10,9 +10,11 @@ import UIKit
 
 class NewChatView: UIView {
     
+    //MARK: Outlets
     @IBOutlet weak var searchBarView: UISearchBar!
     @IBOutlet weak var newChatTableView: UITableView!
     
+    //MARK: Override Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         

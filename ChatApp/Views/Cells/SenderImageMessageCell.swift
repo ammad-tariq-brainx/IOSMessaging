@@ -9,15 +9,12 @@
 import UIKit
 
 class SenderImageMessageCell: UITableViewCell {
-
+    
+    //MARK: Outlets
     @IBOutlet weak var senderImageView: UIImageView!
     @IBOutlet weak var imageMessageView: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
+    //MARK: Public Methods
     func setData(senderImage: UIImage, messageImage: UIImage) {
         senderImageView.image = senderImage
         imageMessageView.image = messageImage

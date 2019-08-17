@@ -11,6 +11,7 @@ import UIKit
 
 class ThreadDetails {
     
+    //Mark: Variables
     var image: UIImage?
     var name: String
     var message = [String]()
@@ -18,6 +19,7 @@ class ThreadDetails {
     var date = [Date]()
     var notification: Int = 0
     
+    //Mark: Initializers
     init(image: String = "", name: String = "No Name") {
         
         if !image.isEmpty {
@@ -26,19 +28,15 @@ class ThreadDetails {
         self.name = name
     }
     
-    func setMessage(message: String) {
-        self.message.append(message)
-        setTime()
-        //setDate()
-        //updateNotification()
-    }
-    
+    //MARK: Private Methods
     private func setTime() {
         self.time.append(Date().timeString)
     }
     
-    private func setDate() {
-        
+    //MARK: Public Methods
+    func setMessage(message: String) {
+        self.message.append(message)
+        setTime()
     }
     
     func updateNotification() {

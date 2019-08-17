@@ -9,7 +9,8 @@
 import UIKit
 
 class ConversationCell: UITableViewCell {
-
+    
+    //Mark: Outlets
     @IBOutlet weak var threadImage: UIImageView!
     @IBOutlet weak var threadName: UILabel!
     @IBOutlet weak var threadMessage: UILabel!
@@ -17,18 +18,7 @@ class ConversationCell: UITableViewCell {
     @IBOutlet weak var threadNotification: UILabel!
     @IBOutlet weak var openMessageButton: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    //MARK: Methods
     func setData(data: ThreadDetails) {
         if let image = data.image {
             threadImage.image = image

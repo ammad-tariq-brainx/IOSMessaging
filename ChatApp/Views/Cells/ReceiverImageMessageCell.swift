@@ -9,19 +9,11 @@
 import UIKit
 
 class ReceiverImageMessageCell: UITableViewCell {
-
+    
+    //MARK: Outlets
     @IBOutlet weak var imageMessage: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    //MARK: Public Methods
     func setData(image: UIImage) {
         imageMessage.image = image
     }

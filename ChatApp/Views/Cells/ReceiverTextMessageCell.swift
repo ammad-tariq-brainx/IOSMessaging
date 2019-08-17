@@ -9,19 +9,14 @@
 import UIKit
 
 class ReceiverTextMessageCell: UITableViewCell {
-
+    
+    //MARK: Outlets
     @IBOutlet weak var senderTextMessage: UILabel!
     @IBOutlet weak var senderTextMessageView: UIView!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        //senderTextMessageView.layer.contents = #imageLiteral(resourceName: "webbg").cgImage
-    }
-
+ 
+    //MARK: Public Methods
     func setData (text: String) {
         senderTextMessage.text = text
     }
-
+    
 }

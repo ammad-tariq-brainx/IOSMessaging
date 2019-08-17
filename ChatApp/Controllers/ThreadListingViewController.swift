@@ -9,10 +9,14 @@
 import UIKit
 
 class ThreadListingViewController: UIViewController {
-
-    var threadsArray = [ThreadDetails]()
+    
+    //MARK: Private Variables
+    private var threadsArray = [ThreadDetails]()
+    
+    //MARK: Outlets
     @IBOutlet var threadListingView: ThreadListingView!
     
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,13 +26,14 @@ class ThreadListingViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-         navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    //MARK: Action Methods
     @IBAction
     func openContactList(_ sender: UIButton) {
         
@@ -38,16 +43,17 @@ class ThreadListingViewController: UIViewController {
         self.navigationController?.present(navigationController, animated: true, completion: nil)
     }
     
-    @IBAction func openMessagingController(_ sender: UIButton) {
+    @IBAction
+    func openMessagingController(_ sender: UIButton) {
+        
         let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyBoard.instantiateViewController(withIdentifier: "messagingViewController") as! MessagingViewController
         viewController.threadDetails = threadsArray[sender.tag]
         self.navigationController?.show(viewController, sender: self)
     }
-    
-    
 }
 
+//Extension: - UITableViewDataSource Methods
 extension ThreadListingViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,7 +76,7 @@ extension ThreadListingViewController: UITableViewDataSource {
             let reusableCell = tableView.dequeueReusableCell(
                 withIdentifier: "ThreadCell",
                 for: indexPath)
-        
+            
             guard let cell = reusableCell as? ConversationCell else {
                 fatalError("Cannot render a cell")
             }
@@ -80,5 +86,4 @@ extension ThreadListingViewController: UITableViewDataSource {
             return cell
         }
     }
-    
 }

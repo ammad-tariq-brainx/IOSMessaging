@@ -9,19 +9,21 @@
 import UIKit
 
 class MessagingView: UIView {
-
+    
+    //MARK: Private Variables
     private let shadowWidth = 3.0
     private let shadowHeight = 3.0
     private let shadowOpacity: Float = 0.05
     private let shadowRadius: CGFloat = 6
     
-    @IBOutlet weak var newMessageBottomConstraint: NSLayoutConstraint!
+    //MARK: Outlets
     @IBOutlet weak var newMessageView: UIView!
     @IBOutlet weak var textMessageView: UIView!
     @IBOutlet weak var newMessageTextField: UITextField!
     @IBOutlet weak var sendMessage: UIButton!
     @IBOutlet weak var messagingTableView: UITableView!
     
+    //MARK: Override Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,12 +32,11 @@ class MessagingView: UIView {
         
         messagingTableView.tableFooterView = UIView()
         newMessageView.addShadow(shadowColor: UIColor.black.cgColor,
-                                      shadowOffset: CGSize(width: shadowWidth, height: shadowHeight),
-                                      shadowOpacity: shadowOpacity,
-                                      shadowRadius: shadowRadius)
+                                 shadowOffset: CGSize(width: shadowWidth, height: shadowHeight),
+                                 shadowOpacity: shadowOpacity,
+                                 shadowRadius: shadowRadius)
         newMessageView.layer.cornerRadius = 20.0
         newMessageView.layer.borderWidth = 1.0
         newMessageView.layer.borderColor = UIColor.lightGray.cgColor
     }
-
 }

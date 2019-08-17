@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62550B83B5C3717E3441FC92 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBF00271CF7B7A624D56B23 /* Pods_ChatApp.framework */; };
+		63D8113B24A3A304936EF0C6 /* Pods_ChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE88A852BF3864EF4BCB38A /* Pods_ChatAppTests.framework */; };
+		7A127E392307DF3F001723E5 /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E352307DF3F001723E5 /* Karla-Bold.ttf */; };
+		7A127E3A2307DF3F001723E5 /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E362307DF3F001723E5 /* Karla-Italic.ttf */; };
+		7A127E3B2307DF3F001723E5 /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E372307DF3F001723E5 /* Karla-BoldItalic.ttf */; };
+		7A127E3C2307DF3F001723E5 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E382307DF3F001723E5 /* Karla-Regular.ttf */; };
+		7A127E3E2307F5DB001723E5 /* LoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A127E3D2307F5DA001723E5 /* LoaderManager.swift */; };
 		7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93522FD51D600B2E95B /* ConversationCell.swift */; };
 		7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */; };
 		7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */; };
@@ -45,16 +52,11 @@
 		7A1DF09022FC5D9300647F22 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF07622FC5D9200647F22 /* SizeUtils.swift */; };
 		7A327B3522FEAA2E0064E4BD /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A327B3422FEAA2E0064E4BD /* MessagingViewController.swift */; };
 		7A327B3722FEAA570064E4BD /* MessagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A327B3622FEAA570064E4BD /* MessagingView.swift */; };
-		7A327B4422FEF39F0064E4BD /* Karla-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */; };
-		7A327B4522FEF39F0064E4BD /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */; };
-		7A327B4622FEF39F0064E4BD /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */; };
-		7A327B4722FEF39F0064E4BD /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */; };
 		7A36EA4D230681CF0003CB70 /* SenderTextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */; };
 		7A36EA4F230681E70003CB70 /* SenderImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */; };
 		7A36EA512306C2420003CB70 /* ReceiverTextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */; };
 		7A36EA532306CF070003CB70 /* ReceiverImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA522306CF070003CB70 /* ReceiverImageMessageCell.swift */; };
 		7A36EA552306D2F00003CB70 /* MessageDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA542306D2F00003CB70 /* MessageDateCell.swift */; };
-		7A36EA572306FBEE0003CB70 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36EA562306FBEE0003CB70 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6148E238F41B2F31F284A0 /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CBF00271CF7B7A624D56B23 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF771FA5594998395A72527 /* Pods-ChatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A127E352307DF3F001723E5 /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Bold.ttf"; path = "../../../../Downloads/karla (2)/Karla-Bold.ttf"; sourceTree = "<group>"; };
+		7A127E362307DF3F001723E5 /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Italic.ttf"; path = "../../../../Downloads/karla (2)/Karla-Italic.ttf"; sourceTree = "<group>"; };
+		7A127E372307DF3F001723E5 /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-BoldItalic.ttf"; path = "../../../../Downloads/karla (2)/Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7A127E382307DF3F001723E5 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../../Downloads/karla (2)/Karla-Regular.ttf"; sourceTree = "<group>"; };
+		7A127E3D2307F5DA001723E5 /* LoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderManager.swift; sourceTree = "<group>"; };
 		7A13E93522FD51D600B2E95B /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetails.swift; sourceTree = "<group>"; };
 		7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadManager.swift; path = ChatApp/Models/ThreadManager.swift; sourceTree = SOURCE_ROOT; };
@@ -110,16 +120,14 @@
 		7A1DF07622FC5D9200647F22 /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
 		7A327B3422FEAA2E0064E4BD /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
 		7A327B3622FEAA570064E4BD /* MessagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingView.swift; sourceTree = "<group>"; };
-		7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Bold.ttf"; sourceTree = "<group>"; };
-		7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
-		7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
-		7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTextMessageCell.swift; sourceTree = "<group>"; };
 		7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderImageMessageCell.swift; sourceTree = "<group>"; };
 		7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTextMessageCell.swift; sourceTree = "<group>"; };
 		7A36EA522306CF070003CB70 /* ReceiverImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverImageMessageCell.swift; sourceTree = "<group>"; };
 		7A36EA542306D2F00003CB70 /* MessageDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDateCell.swift; sourceTree = "<group>"; };
-		7A36EA562306FBEE0003CB70 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		83A343EA9E799E6F8D79AA4F /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AA098280BA805C778CB42FD2 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
+		DAE88A852BF3864EF4BCB38A /* Pods_ChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62550B83B5C3717E3441FC92 /* Pods_ChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D8113B24A3A304936EF0C6 /* Pods_ChatAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +153,7 @@
 		7A13E93922FD59FA00B2E95B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				7A127E3D2307F5DA001723E5 /* LoaderManager.swift */,
 				7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */,
 			);
 			path = Managers;
@@ -163,6 +174,8 @@
 				7A1DF03222FC5CC300647F22 /* ChatApp */,
 				7A1DF04722FC5CC500647F22 /* ChatAppTests */,
 				7A1DF03122FC5CC300647F22 /* Products */,
+				CB5E583092E576980877E893 /* Pods */,
+				B4AFA6BB085E65221281C464 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */,
-				7A36EA562306FBEE0003CB70 /* Message.swift */,
 			);
 			name = Models;
 			path = ChatApp/Models;
@@ -228,10 +240,10 @@
 		7A1DF05B22FC5D9200647F22 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7A327B4022FEF39E0064E4BD /* Karla-Bold.ttf */,
-				7A327B4322FEF39F0064E4BD /* Karla-BoldItalic.ttf */,
-				7A327B4122FEF39F0064E4BD /* Karla-Italic.ttf */,
-				7A327B4222FEF39F0064E4BD /* Karla-Regular.ttf */,
+				7A127E352307DF3F001723E5 /* Karla-Bold.ttf */,
+				7A127E372307DF3F001723E5 /* Karla-BoldItalic.ttf */,
+				7A127E362307DF3F001723E5 /* Karla-Italic.ttf */,
+				7A127E382307DF3F001723E5 /* Karla-Regular.ttf */,
 			);
 			name = Resources;
 			path = ChatApp/Resources;
@@ -310,6 +322,27 @@
 			path = ChatApp/Libraries;
 			sourceTree = "<group>";
 		};
+		B4AFA6BB085E65221281C464 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBF00271CF7B7A624D56B23 /* Pods_ChatApp.framework */,
+				DAE88A852BF3864EF4BCB38A /* Pods_ChatAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB5E583092E576980877E893 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83A343EA9E799E6F8D79AA4F /* Pods-ChatApp.debug.xcconfig */,
+				AA098280BA805C778CB42FD2 /* Pods-ChatApp.release.xcconfig */,
+				2EF771FA5594998395A72527 /* Pods-ChatAppTests.debug.xcconfig */,
+				0A6148E238F41B2F31F284A0 /* Pods-ChatAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A1DF04D22FC5CC500647F22 /* Build configuration list for PBXNativeTarget "ChatApp" */;
 			buildPhases = (
+				1DE7288DC70748616A40B9CC /* [CP] Check Pods Manifest.lock */,
 				7A1DF02C22FC5CC300647F22 /* Sources */,
 				7A1DF02D22FC5CC300647F22 /* Frameworks */,
 				7A1DF02E22FC5CC300647F22 /* Resources */,
+				30275B56635F1862005ABA32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A1DF05022FC5CC500647F22 /* Build configuration list for PBXNativeTarget "ChatAppTests" */;
 			buildPhases = (
+				E753F00E41A0C0F59F94C321 /* [CP] Check Pods Manifest.lock */,
 				7A1DF04022FC5CC500647F22 /* Sources */,
 				7A1DF04122FC5CC500647F22 /* Frameworks */,
 				7A1DF04222FC5CC500647F22 /* Resources */,
@@ -393,11 +429,11 @@
 			files = (
 				7A1DF07922FC5D9300647F22 /* Main.storyboard in Resources */,
 				7A1DF07822FC5D9300647F22 /* LaunchScreen.storyboard in Resources */,
-				7A327B4522FEF39F0064E4BD /* Karla-Italic.ttf in Resources */,
-				7A327B4722FEF39F0064E4BD /* Karla-BoldItalic.ttf in Resources */,
+				7A127E3A2307DF3F001723E5 /* Karla-Italic.ttf in Resources */,
 				7A1DF03B22FC5CC500647F22 /* Assets.xcassets in Resources */,
-				7A327B4422FEF39F0064E4BD /* Karla-Bold.ttf in Resources */,
-				7A327B4622FEF39F0064E4BD /* Karla-Regular.ttf in Resources */,
+				7A127E3C2307DF3F001723E5 /* Karla-Regular.ttf in Resources */,
+				7A127E392307DF3F001723E5 /* Karla-Bold.ttf in Resources */,
+				7A127E3B2307DF3F001723E5 /* Karla-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,11 +446,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DE7288DC70748616A40B9CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30275B56635F1862005ABA32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatApp/Pods-ChatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatApp/Pods-ChatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatApp/Pods-ChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E753F00E41A0C0F59F94C321 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A1DF02C22FC5CC300647F22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A127E3E2307F5DB001723E5 /* LoaderManager.swift in Sources */,
 				7A1DF08B22FC5D9300647F22 /* NSArray.swift in Sources */,
 				7A1DF07E22FC5D9300647F22 /* Data.swift in Sources */,
 				7A1DF07C22FC5D9300647F22 /* UIView.swift in Sources */,
@@ -452,7 +553,6 @@
 				7A1DF08622FC5D9300647F22 /* String.swift in Sources */,
 				7A36EA4F230681E70003CB70 /* SenderImageMessageCell.swift in Sources */,
 				7A1DF07F22FC5D9300647F22 /* UIBarButtonItem.swift in Sources */,
-				7A36EA572306FBEE0003CB70 /* Message.swift in Sources */,
 				7A1DF07B22FC5D9300647F22 /* Date.swift in Sources */,
 				7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */,
 			);
@@ -614,6 +714,7 @@
 		};
 		7A1DF04E22FC5CC500647F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A343EA9E799E6F8D79AA4F /* Pods-ChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +732,7 @@
 		};
 		7A1DF04F22FC5CC500647F22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA098280BA805C778CB42FD2 /* Pods-ChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +750,7 @@
 		};
 		7A1DF05122FC5CC500647F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF771FA5594998395A72527 /* Pods-ChatAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,6 +771,7 @@
 		};
 		7A1DF05222FC5CC500647F22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6148E238F41B2F31F284A0 /* Pods-ChatAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
