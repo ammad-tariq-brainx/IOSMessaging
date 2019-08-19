@@ -24,10 +24,17 @@ class MessageDateCell: UITableViewCell {
         setupLine(view: rightLineView)
     }
     
+    //MARK: Public Methods
+    func setData (date: String, time: String) {
+        timeView.text = time
+        dateView.text = date
+    }
+    
     //MARK: Private Methods
     private func setupLine(view: UIView) {
         view.layer.borderWidth = 1.0
         view.setBorderColor(color: UIColor(red: 0.64, green: 0.71, blue: 0.76, alpha: 0.5))
     }
+    
     
 }

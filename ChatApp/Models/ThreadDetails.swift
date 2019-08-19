@@ -14,11 +14,8 @@ class ThreadDetails {
     //Mark: Variables
     var image: UIImage?
     var name: String
-    var message = [String]()
-    var time = [String]()
-    var date = [Date]()
-    var notification: Int = 0
     var messages = [Message]()
+    var notification = 0
     
     //Mark: Initializers
     init(image: String = "", name: String = "No Name") {
@@ -29,15 +26,26 @@ class ThreadDetails {
         self.name = name
     }
     
-    //MARK: Private Methods
-    private func setTime() {
-        self.time.append(Date().timeString)
+    //MARK: Public  Methods
+    func setTime() {
+        messages.append(Message(text: "",
+                                image: nil,
+                                date: Date().dateString,
+                                time: Date().timeString))
     }
     
-    //MARK: Public Methods
     func setMessage(message: String) {
-        self.message.append(message)
-        setTime()
+        messages.append(Message(text: message,
+                                image: nil,
+                                date: "",
+                                time: ""))
+    }
+    
+    func setMessage(image: UIImage) {
+        messages.append(Message(text: "",
+                                image: image,
+                                date: "",
+                                time: ""))
     }
     
     func updateNotification() {

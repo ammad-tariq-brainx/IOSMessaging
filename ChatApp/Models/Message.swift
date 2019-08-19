@@ -14,4 +14,13 @@ class Message {
     var time = ""
     var text = ""
     var image: UIImage?
+    
+    init(text: String, image: UIImage?, date: String, time: String) {
+        self.text = text
+        self.date = date
+        self.time = time
+        if let messageImage = image {
+            self.image = messageImage
+        }
+    }
 }

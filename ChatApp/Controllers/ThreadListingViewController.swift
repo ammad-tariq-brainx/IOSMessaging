@@ -28,6 +28,7 @@ class ThreadListingViewController: UIViewController {
         
         if let navigation = navigationController {          navigation.setNavigationBarHidden(true, animated: false)
         }
+        loadData()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -80,21 +81,21 @@ extension ThreadListingViewController: UITableViewDataSource {
                 withIdentifier: AppConstants.Identifier.newChat,
                 for: indexPath)
             
-            guard let cell = reusableCell as? ThreadsListingCell else {
+            guard let cell = reusableCell as? NewChatCell else {
                 Utils.showOkAlert(title: AppConstants.Title.error,
                                   message: AppConstants.Message.cannotRenderCell,
                                   viewController: self)
                 return UITableViewCell()
             }
             cell.setData(imageString: AppConstants.ImageString.newChat, text: AppConstants.Message.newChat)
-            tableView.rowHeight = 80
+            tableView.rowHeight = 60
             return cell
         } else {
             let reusableCell = tableView.dequeueReusableCell(
                 withIdentifier: AppConstants.Identifier.threadCell,
                 for: indexPath)
             
-            guard let cell = reusableCell as? ConversationCell else {
+            guard let cell = reusableCell as? ThreadsListingCell else {
                 Utils.showOkAlert(title: AppConstants.Title.error,
                                   message: AppConstants.Message.cannotRenderCell,
                                   viewController: self)

@@ -25,6 +25,16 @@ class NewChatViewController: UIViewController {
     }
     
     //MARK: Action Methods
+    @IBAction
+    func openThreadMessages(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: AppConstants.StoryboardId.main,
+                                      bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: AppConstants.ControllerId.messagingViewController)
+            as! MessagingViewController
+        viewController.threadDetails = threadsArray[sender.tag]
+        self.navigationController?.show(viewController, sender: self)
+    }
+    
     @objc
     func closeController () {
         self.dismiss(animated: true, completion: nil)
@@ -49,7 +59,7 @@ class NewChatViewController: UIViewController {
     }
     
     private func loadData() {
-        threadsArray = ThreadManager.shared.loadAllContacts()
+        threadsArray = ThreadManager.shared.loadThreads()
     }
 }
 
@@ -67,10 +77,11 @@ extension NewChatViewController: UITableViewDataSource {
             withIdentifier: AppConstants.Identifier.newChat,
             for: indexPath)
         
-        guard let cell = reusableCell as? NewChatListingCell else {
+        guard let cell = reusableCell as? ContactsListingCell else {
            Utils.showOkAlert(title: AppConstants.Title.error, message: AppConstants.Message.cannotRenderCell, viewController: self)
             return UITableViewCell()
         }
+        cell.openMessagesButton.tag = indexPath.row
         cell.setData(image: threadsArray[indexPath.row].image,
                      text: threadsArray[indexPath.row].name)
         return cell

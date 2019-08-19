@@ -61,7 +61,7 @@ extension Date {
         
         static let dateFormat: DateFormatter = {
             let formatter = DateFormatter()
-            formatter.dateFormat = "dd/MM/yyyy"
+            formatter.dateFormat = "dd MMMM, yyyy"
             return formatter
         }()
         

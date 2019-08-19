@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ThreadManager {
     
@@ -18,50 +19,16 @@ class ThreadManager {
     }
     
     //MARK: Methods
-    func loadAllContacts() -> [ThreadDetails] {
-        
-        var threads = [ThreadDetails]()
-        var singleThread = ThreadDetails(image: AppConstants.ImageString.mariaJane,
-                                         name: AppConstants.Name.mariaJane)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
-                                     name: AppConstants.Name.denKlenkov)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
-                                     name: AppConstants.Name.jummonSadik)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
-                                     name: AppConstants.Name.tamannaSadh)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.shakiraJethi,
-                                     name: AppConstants.Name.shakiraJethi)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.zhenyaRynzhuk,
-                                     name: AppConstants.Name.zhenyaRynzhuk)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
-                                     name: AppConstants.Name.tamannaSadh)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
-                                     name: AppConstants.Name.denKlenkov)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
-                                     name: AppConstants.Name.jummonSadik)
-        threads.append(singleThread)
-        singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
-                                     name: AppConstants.Name.denKlenkov)
-        threads.append(singleThread)
-        return threads
-    }
-    
     func loadThreads() -> [ThreadDetails] {
         
         var threads = [ThreadDetails]()
         var singleThread = ThreadDetails(image: AppConstants.ImageString.mariaJane,
                                          name: AppConstants.Name.mariaJane)
+        singleThread.setTime()
         singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
+        singleThread.setTime()
         singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
         singleThread.updateNotification()
@@ -70,8 +37,8 @@ class ThreadManager {
         singleThread = ThreadDetails(image: AppConstants.ImageString.tamannaSadh,
                                      name: AppConstants.Name.tamannaSadh)
         singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
-        singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
-        singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
+        singleThread.setMessage(image: UIImage(imageLiteralResourceName: AppConstants.ImageString.tamannaSadh))
+        singleThread.setMessage(image: UIImage(imageLiteralResourceName: AppConstants.ImageString.tamannaSadh))
         singleThread.setMessage(message: AppConstants.Message.manyHaveUnsuccessfullyLaunched)
         singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         threads.append(singleThread)

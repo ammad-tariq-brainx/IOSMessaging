@@ -22,9 +22,32 @@ class MessagingViewController: UIViewController {
         
         keyboardSetup()
         navigationBarSetup()
+        LoaderManager.show(messagingView, message: AppConstants.Message.loading)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+            LoaderManager.hide(self.messagingView)
+            self.scrollToBottom()
+        }
     }
     
     //MARK: Action Methods
+    @IBAction func sendMessage(_ sender: UIButton) {
+        if let message = messagingView.newMessageTextField.text {
+            if !message.isEmpty {
+                threadDetails?.setMessage(message: message)
+                messagingView.newMessageTextField.text = ""
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
+                    self.messagingView.messagingTableView.reloadData()
+                    self.scrollToBottom()
+                }
+            }
+        }
+    }
+    
     @objc
     func keyboardWillShow(notification:NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey]
@@ -55,6 +78,14 @@ class MessagingViewController: UIViewController {
     }
     
     //MARK: Private Methods
+    private func scrollToBottom(){
+        DispatchQueue.main.async {
+            let indexPath = IndexPath(row: (self.threadDetails?.messages.count)!-1, section: 0)
+            self.messagingView.messagingTableView.scrollToRow(at: indexPath,
+                                                              at: .bottom, animated: true)
+        }
+    }
+    
     private func navigationBarSetup() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.0) {
             if let navigation = self.navigationController {
@@ -101,6 +132,7 @@ class MessagingViewController: UIViewController {
 
 //Extension: - UITableViewDataSource Methods
 extension MessagingViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -108,86 +140,98 @@ extension MessagingViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return (threadDetails?.messages.count)!
     }
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let thread = threadDetails {
-            if indexPath.row == 0 || indexPath.row == 4 {
-                let reusableCell = tableView.dequeueReusableCell(
-                    withIdentifier: AppConstants.Identifier.dateCell,
-                    for: indexPath)
-                
-                guard let cell = reusableCell as? MessageDateCell else {
-                    Utils.showOkAlert(title: AppConstants.Title.error,
-                                      message: AppConstants.Message.cannotRenderCell,
-                                      viewController: self)
-                    return UITableViewCell()
-                }
-                return cell
-            } else if indexPath.row == 5 {
-                let reusableCell = tableView.dequeueReusableCell(
-                    withIdentifier: AppConstants.Identifier.senderImageMessage,
-                    for: indexPath)
-                
-                guard let cell = reusableCell as? SenderImageMessageCell else {
-                    Utils.showOkAlert(title: AppConstants.Title.error,
-                                      message: AppConstants.Message.cannotRenderCell,
-                                      viewController: self)
-                    return UITableViewCell()
-                }
-                    if let image = thread.image {
-                        cell.setData( senderImage: image, messageImage: image)
+            if !thread.messages.isEmpty {
+                if thread.name == AppConstants.Name.mariaJane {
+                    if indexPath.row == 0 || indexPath.row == 4 {
+                        let reusableCell = tableView.dequeueReusableCell(
+                            withIdentifier: AppConstants.Identifier.dateCell,
+                            for: indexPath)
+                        
+                        guard let cell = reusableCell as? MessageDateCell else {
+                            Utils.showOkAlert(title: AppConstants.Title.error,
+                                              message: AppConstants.Message.cannotRenderCell,
+                                              viewController: self)
+                            return UITableViewCell()
+                        }
+                        cell.setData(date: thread.messages[indexPath.row].date,
+                                     time: thread.messages[indexPath.row].time)
+                        return cell
                     }
-                return cell
-            } else if indexPath.row == 6 {
-                let reusableCell = tableView.dequeueReusableCell(
-                    withIdentifier: AppConstants.Identifier.receiverImageMessage,
-                    for: indexPath)
-                
-                guard let cell = reusableCell as? ReceiverImageMessageCell else {
-                    Utils.showOkAlert(title: AppConstants.Title.error,
-                                      message: AppConstants.Message.cannotRenderCell,
-                                      viewController: self)
-                    return UITableViewCell()
                 }
-                    if let image = thread.image {
-                        cell.setData( image: image)
+                if !thread.messages[indexPath.row].text.isEmpty {
+                    if indexPath.row == 2 {
+                        let reusableCell = tableView.dequeueReusableCell(
+                            withIdentifier: AppConstants.Identifier.receiverTextMessage,
+                            for: indexPath)
+                        
+                        guard let cell = reusableCell as? ReceiverTextMessageCell else {
+                            Utils.showOkAlert(title: AppConstants.Title.error,
+                                              message: AppConstants.Message.cannotRenderCell,
+                                              viewController: self)
+                            return UITableViewCell()
+                        }
+                        cell.setData(text: thread.messages[indexPath.row].text)
+                        return cell
+                    } else {
+                        let reusableCell = tableView.dequeueReusableCell(
+                            withIdentifier: AppConstants.Identifier.senderTextMessage,
+                            for: indexPath)
+                        
+                        guard let cell = reusableCell as? SenderTextMessageCell else {
+                            Utils.showOkAlert(title: AppConstants.Title.error,
+                                              message: AppConstants.Message.cannotRenderCell,
+                                              viewController: self)
+                            return UITableViewCell()
+                        }
+                        if let image = thread.image {
+                            cell.setData( image: image,
+                                          text: thread.messages[indexPath.row].text)
+                        }
+                        return cell
                     }
-                return cell
-            } else if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 7 {
-                let reusableCell = tableView.dequeueReusableCell(
-                    withIdentifier: AppConstants.Identifier.receiverTextMessage,
-                    for: indexPath)
-                
-                guard let cell = reusableCell as? ReceiverTextMessageCell else {
-                    Utils.showOkAlert(title: AppConstants.Title.error,
-                                      message: AppConstants.Message.cannotRenderCell,
-                                      viewController: self)
-                    return UITableViewCell()
+                } else if indexPath.row % 2 == 1{
+                    let reusableCell = tableView.dequeueReusableCell(
+                        withIdentifier: AppConstants.Identifier.senderImageMessage,
+                        for: indexPath)
+                    
+                    guard let cell = reusableCell as? SenderImageMessageCell else {
+                        Utils.showOkAlert(title: AppConstants.Title.error,
+                                          message: AppConstants.Message.cannotRenderCell,
+                                          viewController: self)
+                        return UITableViewCell()
+                    }
+                    if let image = thread.messages[indexPath.row].image {
+                        if let contactImage = thread.image {
+                            cell.setData( senderImage: contactImage,
+                                          messageImage: image)
+                        }
+                    }
+                    return cell
+                } else {
+                    let reusableCell = tableView.dequeueReusableCell(
+                        withIdentifier: AppConstants.Identifier.receiverImageMessage,
+                        for: indexPath)
+                    
+                    guard let cell = reusableCell as? ReceiverImageMessageCell else {
+                        Utils.showOkAlert(title: AppConstants.Title.error,
+                                          message: AppConstants.Message.cannotRenderCell,
+                                          viewController: self)
+                        return UITableViewCell()
+                    }
+                    if let image = thread.messages[indexPath.row].image {
+                        cell.setData(image: image)
+                    }
+                    return cell
                 }
-                if !thread.message.isEmpty {
-                    cell.setData( text: (thread.message[0]))
-                }
-                return cell
             } else {
-                let reusableCell = tableView.dequeueReusableCell(
-                    withIdentifier: AppConstants.Identifier.senderTextMessage,
-                    for: indexPath)
-                
-                guard let cell = reusableCell as? SenderTextMessageCell else {
-                    Utils.showOkAlert(title: AppConstants.Title.error,
-                                      message: AppConstants.Message.cannotRenderCell,
-                                      viewController: self)
-                    return UITableViewCell()
-                }
-                if let image = thread.image {
-                    cell.setData( image: image,
-                                  text: thread.message[2])
-                }
-                return cell
+                return UITableViewCell()
             }
         } else {
             return UITableViewCell()
@@ -212,6 +256,19 @@ extension MessagingViewController: UIImagePickerControllerDelegate, UINavigation
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as?  UIImage else {
+            Utils.showOkAlert(title: AppConstants.Title.error,
+                              message: AppConstants.Message.errorLoadingImage,
+                              viewController: self)
+            return
+        }
+        LoaderManager.show(messagingView, message: AppConstants.Message.sendingImage)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+            self.threadDetails?.setMessage(image: selectedImage)
+            self.messagingView.messagingTableView.reloadData()
+            LoaderManager.hide(self.messagingView)
+            self.scrollToBottom()
+        }
         dismiss (animated: true, completion: nil)
     }
 }

@@ -20,7 +20,6 @@ class MessagingView: UIView {
     @IBOutlet weak var newMessageView: UIView!
     @IBOutlet weak var textMessageView: UIView!
     @IBOutlet weak var newMessageTextField: UITextField!
-    @IBOutlet weak var sendMessage: UIButton!
     @IBOutlet weak var messagingTableView: UITableView!
     
     //MARK: Override Methods
@@ -31,6 +30,7 @@ class MessagingView: UIView {
         newMessageSetup()
     }
     
+    //MARK: Private Methods
     private func messageTableViewSetup () {
         messagingTableView.rowHeight = UITableView.automaticDimension
         messagingTableView.estimatedRowHeight = UITableView.automaticDimension

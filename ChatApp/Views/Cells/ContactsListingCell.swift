@@ -8,11 +8,12 @@
 
 import UIKit
 
-class NewChatListingCell: UITableViewCell {
+class ContactsListingCell: UITableViewCell {
     
     //MARK: Outlets
     @IBOutlet weak var newChatImageView: UIImageView!
     @IBOutlet weak var newChatNameLabel: UILabel!
+    @IBOutlet weak var openMessagesButton: UIButton!
     
     //MARK: Public Methods
     func setData(image: UIImage?, text: String) {

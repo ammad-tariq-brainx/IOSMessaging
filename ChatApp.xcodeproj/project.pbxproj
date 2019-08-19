@@ -15,14 +15,14 @@
 		7A127E3B2307DF3F001723E5 /* Karla-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E372307DF3F001723E5 /* Karla-BoldItalic.ttf */; };
 		7A127E3C2307DF3F001723E5 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A127E382307DF3F001723E5 /* Karla-Regular.ttf */; };
 		7A127E3E2307F5DB001723E5 /* LoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A127E3D2307F5DA001723E5 /* LoaderManager.swift */; };
-		7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93522FD51D600B2E95B /* ConversationCell.swift */; };
+		7A13E93622FD51D600B2E95B /* ThreadsListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93522FD51D600B2E95B /* ThreadsListingCell.swift */; };
 		7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */; };
 		7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */; };
 		7A13E93D22FD794800B2E95B /* ThreadListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93C22FD794800B2E95B /* ThreadListingView.swift */; };
-		7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */; };
+		7A13E93F22FD7C5800B2E95B /* NewChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E93E22FD7C5800B2E95B /* NewChatCell.swift */; };
 		7A13E95222FDAD4000B2E95B /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */; };
 		7A13E95422FDADE100B2E95B /* NewChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95322FDADE100B2E95B /* NewChatView.swift */; };
-		7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */; };
+		7A13E95622FDBAF700B2E95B /* ContactsListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13E95522FDBAF700B2E95B /* ContactsListingCell.swift */; };
 		7A1DF03422FC5CC300647F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF03322FC5CC300647F22 /* AppDelegate.swift */; };
 		7A1DF03B22FC5CC500647F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1DF03A22FC5CC500647F22 /* Assets.xcassets */; };
 		7A1DF04922FC5CC500647F22 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DF04822FC5CC500647F22 /* ChatAppTests.swift */; };
@@ -80,14 +80,14 @@
 		7A127E372307DF3F001723E5 /* Karla-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-BoldItalic.ttf"; path = "../../../../Downloads/karla (2)/Karla-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7A127E382307DF3F001723E5 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Karla-Regular.ttf"; path = "../../../../Downloads/karla (2)/Karla-Regular.ttf"; sourceTree = "<group>"; };
 		7A127E3D2307F5DA001723E5 /* LoaderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderManager.swift; sourceTree = "<group>"; };
-		7A13E93522FD51D600B2E95B /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		7A13E93522FD51D600B2E95B /* ThreadsListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsListingCell.swift; sourceTree = "<group>"; };
 		7A13E93722FD52AD00B2E95B /* ThreadDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadDetails.swift; sourceTree = "<group>"; };
 		7A13E93A22FD5A6B00B2E95B /* ThreadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThreadManager.swift; path = ChatApp/Models/ThreadManager.swift; sourceTree = SOURCE_ROOT; };
 		7A13E93C22FD794800B2E95B /* ThreadListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadListingView.swift; sourceTree = "<group>"; };
-		7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsListingCell.swift; sourceTree = "<group>"; };
+		7A13E93E22FD7C5800B2E95B /* NewChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatCell.swift; sourceTree = "<group>"; };
 		7A13E95122FDAD4000B2E95B /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
 		7A13E95322FDADE100B2E95B /* NewChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatView.swift; sourceTree = "<group>"; };
-		7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatListingCell.swift; sourceTree = "<group>"; };
+		7A13E95522FDBAF700B2E95B /* ContactsListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListingCell.swift; sourceTree = "<group>"; };
 		7A1DF03022FC5CC300647F22 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1DF03322FC5CC300647F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A1DF03A22FC5CC500647F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -293,9 +293,9 @@
 		7A1DF07122FC5D9200647F22 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7A13E93522FD51D600B2E95B /* ConversationCell.swift */,
-				7A13E93E22FD7C5800B2E95B /* ThreadsListingCell.swift */,
-				7A13E95522FDBAF700B2E95B /* NewChatListingCell.swift */,
+				7A13E93522FD51D600B2E95B /* ThreadsListingCell.swift */,
+				7A13E93E22FD7C5800B2E95B /* NewChatCell.swift */,
+				7A13E95522FDBAF700B2E95B /* ContactsListingCell.swift */,
 				7A36EA4C230681CF0003CB70 /* SenderTextMessageCell.swift */,
 				7A36EA4E230681E70003CB70 /* SenderImageMessageCell.swift */,
 				7A36EA502306C2420003CB70 /* ReceiverTextMessageCell.swift */,
@@ -547,17 +547,17 @@
 				7A36EA552306D2F00003CB70 /* MessageDateCell.swift in Sources */,
 				7A1DF08F22FC5D9300647F22 /* AppConstants.swift in Sources */,
 				7A36EA532306CF070003CB70 /* ReceiverImageMessageCell.swift in Sources */,
-				7A13E95622FDBAF700B2E95B /* NewChatListingCell.swift in Sources */,
+				7A13E95622FDBAF700B2E95B /* ContactsListingCell.swift in Sources */,
 				7A13E93822FD52AD00B2E95B /* ThreadDetails.swift in Sources */,
 				7A1DF08522FC5D9300647F22 /* Dictionary.swift in Sources */,
 				7A327B3522FEAA2E0064E4BD /* MessagingViewController.swift in Sources */,
-				7A13E93F22FD7C5800B2E95B /* ThreadsListingCell.swift in Sources */,
+				7A13E93F22FD7C5800B2E95B /* NewChatCell.swift in Sources */,
 				7A13E93B22FD5A6B00B2E95B /* ThreadManager.swift in Sources */,
 				7A1DF08622FC5D9300647F22 /* String.swift in Sources */,
 				7A36EA4F230681E70003CB70 /* SenderImageMessageCell.swift in Sources */,
 				7A1DF07F22FC5D9300647F22 /* UIBarButtonItem.swift in Sources */,
 				7A1DF07B22FC5D9300647F22 /* Date.swift in Sources */,
-				7A13E93622FD51D600B2E95B /* ConversationCell.swift in Sources */,
+				7A13E93622FD51D600B2E95B /* ThreadsListingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

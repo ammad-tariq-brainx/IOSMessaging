@@ -24,6 +24,9 @@ class AppConstants {
         static let howYouDoThat = "How you do that?"
         static let newChat = "New Chat"
         static let chat = "Chat"
+        static let errorLoadingImage = "Error Loading Image"
+        static let sendingImage = "Sending Image"
+        static let loading = "Loading"
     }
     
     struct StoryboardId {
