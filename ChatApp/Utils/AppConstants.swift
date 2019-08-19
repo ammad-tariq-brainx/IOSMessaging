@@ -20,7 +20,10 @@ class AppConstants {
         static let cannotRenderCell = "Cannot Render a Cell"
         static let iLikeToWorkWithYou = "I like to work with you"
         static let manyHaveUnsuccessfullyLaunched = "Many have unsuccessfully launched a business venture that is internet base but only a handful"
-        
+        static let doYouWantToWorkWithMe = "Do you want to work with me?"
+        static let howYouDoThat = "How you do that?"
+        static let newChat = "New Chat"
+        static let chat = "Chat"
     }
     
     struct StoryboardId {
@@ -29,6 +32,18 @@ class AppConstants {
     
     struct ControllerId {
         static let mainViewController = "mainViewController"
+        static let newChatViewController = "newChatViewController"
+        static let messagingViewController = "messagingViewController"
+    }
+    
+    struct Identifier {
+        static let newChat = "NewChat"
+        static let threadCell = "ThreadCell"
+        static let dateCell = "dateCell"
+        static let senderImageMessage = "senderImageMessage"
+        static let receiverImageMessage = "receiverImageMessage"
+        static let senderTextMessage = "senderTextMessage"
+        static let receiverTextMessage = "receiverTextMessage"
     }
     
     struct Endpoint {
@@ -57,5 +72,9 @@ class AppConstants {
         static let tamannaSadh = "TamannaSadh"
         static let shakiraJethi = "ShakiraJethi"
         static let zhenyaRynzhuk = "zhenyaRynzhuk"
+        static let newChat = "NewChat"
+        static let close = "Close"
+        static let back = "Back"
+        static let backgroundGradient = "BackgroundGradient"
     }
 }

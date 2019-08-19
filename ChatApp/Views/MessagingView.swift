@@ -27,10 +27,17 @@ class MessagingView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        messageTableViewSetup()
+        newMessageSetup()
+    }
+    
+    private func messageTableViewSetup () {
         messagingTableView.rowHeight = UITableView.automaticDimension
         messagingTableView.estimatedRowHeight = UITableView.automaticDimension
-        
         messagingTableView.tableFooterView = UIView()
+    }
+    
+    private func newMessageSetup() {
         newMessageView.addShadow(shadowColor: UIColor.black.cgColor,
                                  shadowOffset: CGSize(width: shadowWidth, height: shadowHeight),
                                  shadowOpacity: shadowOpacity,

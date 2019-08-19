@@ -24,10 +24,20 @@ class ConversationCell: UITableViewCell {
             threadImage.image = image
         }
         threadName.text = data.name
-        threadMessage.text = data.message.last
+        if data.message.isEmpty {
+            threadMessage.text = AppConstants.Message.newChat
+        } else {
+            threadMessage.text = data.message.last
+        }
         threadTime.text = data.time.last
-        threadNotification.backgroundColor = UIColor(patternImage: UIImage(named: "BackgroundGradient")!)
         threadNotification.text = String(data.notification)
+        threadNotificationSettings(data: data)
+    }
+    
+    private func threadNotificationSettings(data: ThreadDetails) {
+        if let background = UIImage(named: AppConstants.ImageString.backgroundGradient) {
+            threadNotification.backgroundColor = UIColor(patternImage: background)
+        }
         if data.notification > 0 {
             threadNotification.isHidden = false
             threadMessage.textColor = .black

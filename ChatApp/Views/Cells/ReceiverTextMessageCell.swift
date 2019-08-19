@@ -12,7 +12,6 @@ class ReceiverTextMessageCell: UITableViewCell {
     
     //MARK: Outlets
     @IBOutlet weak var senderTextMessage: UILabel!
-    @IBOutlet weak var senderTextMessageView: UIView!
  
     //MARK: Public Methods
     func setData (text: String) {

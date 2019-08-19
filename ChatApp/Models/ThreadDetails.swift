@@ -18,6 +18,7 @@ class ThreadDetails {
     var time = [String]()
     var date = [Date]()
     var notification: Int = 0
+    var messages = [Message]()
     
     //Mark: Initializers
     init(image: String = "", name: String = "No Name") {

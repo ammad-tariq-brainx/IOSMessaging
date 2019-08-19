@@ -20,8 +20,7 @@ class ThreadListingView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        titleViewLabel.text = "Chat"
+        titleViewLabel.text = AppConstants.Message.chat
         threadListingTableView.tableFooterView = UIView()
     }
-    
 }

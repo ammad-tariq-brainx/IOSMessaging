@@ -79,28 +79,28 @@ class ThreadManager {
         singleThread = ThreadDetails(image: AppConstants.ImageString.shakiraJethi,
                                      name: AppConstants.Name.shakiraJethi)
         for _ in 0..<5 {
-            singleThread.setMessage(message: "I like to work with you")
+            singleThread.setMessage(message: AppConstants.Message.iLikeToWorkWithYou)
         }
         threads.append(singleThread)
         
         singleThread = ThreadDetails(image: AppConstants.ImageString.zhenyaRynzhuk,
                                      name: AppConstants.Name.zhenyaRynzhuk)
         for _ in 0..<5 {
-            singleThread.setMessage(message: "Do you want to work with me? Surely we can make up things together")
+            singleThread.setMessage(message: AppConstants.Message.doYouWantToWorkWithMe)
         }
         threads.append(singleThread)
         
         singleThread = ThreadDetails(image: AppConstants.ImageString.denKlenkov,
                                      name: AppConstants.Name.denKlenkov)
         for _ in 0..<5 {
-            singleThread.setMessage(message: "How you do that?")
+            singleThread.setMessage(message: AppConstants.Message.howYouDoThat)
         }
         threads.append(singleThread)
         
         singleThread = ThreadDetails(image: AppConstants.ImageString.jummonSadik,
                                      name: AppConstants.Name.jummonSadik)
         for _ in 0..<5 {
-            singleThread.setMessage(message: "New Chat")
+            singleThread.setMessage(message: AppConstants.Message.howYouDoThat)
         }
         threads.append(singleThread)
         return threads

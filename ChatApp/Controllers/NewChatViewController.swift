@@ -20,17 +20,13 @@ class NewChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.barTintColor = .white
-        self.navigationItem.title = "New Chat"
-        let button1 = UIBarButtonItem(image: UIImage(named: "Close"), style: .plain, target: self, action: #selector(action))
-        button1.tintColor = .lightGray
-        self.navigationItem.leftBarButtonItem = button1
-        threadsArray = ThreadManager.shared.loadAllContacts()
+        navigationBarSetup()
+        loadData()
     }
     
     //MARK: Action Methods
     @objc
-    func action () {
+    func closeController () {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -38,25 +34,45 @@ class NewChatViewController: UIViewController {
     func closeNewChat(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    
+    //MARK: Private Methods
+    private func navigationBarSetup() {
+        if let navigation = navigationController {
+            navigation.navigationBar.barTintColor = .white
+        }
+        self.navigationItem.title = AppConstants.Message.newChat
+        let button1 = UIBarButtonItem(image: UIImage(named: AppConstants.ImageString.close),
+                                      style: .plain, target: self,
+                                      action: #selector(closeController))
+        button1.tintColor = .lightGray
+        self.navigationItem.leftBarButtonItem = button1
+    }
+    
+    private func loadData() {
+        threadsArray = ThreadManager.shared.loadAllContacts()
+    }
 }
 
 //Extension: - UITableViewDataSource Methods
 extension NewChatViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return threadsArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let reusableCell = tableView.dequeueReusableCell(
-            withIdentifier: "NewChat",
+            withIdentifier: AppConstants.Identifier.newChat,
             for: indexPath)
         
         guard let cell = reusableCell as? NewChatListingCell else {
            Utils.showOkAlert(title: AppConstants.Title.error, message: AppConstants.Message.cannotRenderCell, viewController: self)
             return UITableViewCell()
         }
-        cell.setData(image: threadsArray[indexPath.row].image, text: threadsArray[indexPath.row].name)
+        cell.setData(image: threadsArray[indexPath.row].image,
+                     text: threadsArray[indexPath.row].name)
         return cell
     }
 }

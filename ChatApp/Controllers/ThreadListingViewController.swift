@@ -20,13 +20,14 @@ class ThreadListingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        threadsArray = ThreadManager.shared.loadThreads()
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        if let navigation = navigationController {          navigation.setNavigationBarHidden(true, animated: false)
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,48 +38,67 @@ class ThreadListingViewController: UIViewController {
     @IBAction
     func openContactList(_ sender: UIButton) {
         
-        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "newChatViewController") as! NewChatViewController
+        let storyBoard = UIStoryboard(name: AppConstants.StoryboardId.main,
+                                      bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: AppConstants.ControllerId.newChatViewController)
+            as! NewChatViewController
         let navigationController = UINavigationController(rootViewController: viewController)
-        self.navigationController?.present(navigationController, animated: true, completion: nil)
+        self.navigationController?.present(navigationController,
+                                           animated: true,
+                                           completion: nil)
     }
     
     @IBAction
     func openMessagingController(_ sender: UIButton) {
         
-        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "messagingViewController") as! MessagingViewController
+        let storyBoard = UIStoryboard(name: AppConstants.StoryboardId.main,
+                                      bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(withIdentifier: AppConstants.ControllerId.messagingViewController)
+            as! MessagingViewController
         viewController.threadDetails = threadsArray[sender.tag]
         self.navigationController?.show(viewController, sender: self)
+    }
+    
+    //MARK: Private Methods
+    private func loadData() {
+        threadsArray = ThreadManager.shared.loadThreads()
     }
 }
 
 //Extension: - UITableViewDataSource Methods
 extension ThreadListingViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return threadsArray.count + 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let reusableCell = tableView.dequeueReusableCell(
-                withIdentifier: "NewChat",
+                withIdentifier: AppConstants.Identifier.newChat,
                 for: indexPath)
             
             guard let cell = reusableCell as? ThreadsListingCell else {
-                fatalError("Cannot render a cell")
+                Utils.showOkAlert(title: AppConstants.Title.error,
+                                  message: AppConstants.Message.cannotRenderCell,
+                                  viewController: self)
+                return UITableViewCell()
             }
-            cell.setData(imageString: "NewChat", text: "New Chat")
+            cell.setData(imageString: AppConstants.ImageString.newChat, text: AppConstants.Message.newChat)
             tableView.rowHeight = 80
             return cell
         } else {
             let reusableCell = tableView.dequeueReusableCell(
-                withIdentifier: "ThreadCell",
+                withIdentifier: AppConstants.Identifier.threadCell,
                 for: indexPath)
             
             guard let cell = reusableCell as? ConversationCell else {
-                fatalError("Cannot render a cell")
+                Utils.showOkAlert(title: AppConstants.Title.error,
+                                  message: AppConstants.Message.cannotRenderCell,
+                                  viewController: self)
+                return UITableViewCell()
             }
             cell.openMessageButton.tag = indexPath.row - 1
             cell.setData(data: threadsArray[indexPath.row - 1])
